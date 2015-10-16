@@ -111,7 +111,7 @@ There is also a gulp task to generate them if you want to:
 ```
 $> gulp jsdoc
 ```
-
+The documentation uses Jaguar.js and the jsdoc format, the configuration file can be found at gulp/utils/jsdoc.conf.json
 ## License
 
 [MIT license](http://opensource.org/licenses/MIT)
