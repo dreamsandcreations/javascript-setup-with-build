@@ -9,6 +9,7 @@ var path        = require('path'),
     buffer      = require('vinyl-buffer'),
     browserify  = require('browserify'),
     watchify    = require('watchify'),
+    stripDebug = require('gulp-strip-debug'),
     handleErrors = require('../util/handleErrors');
 
 // TODO - Concat license header to dev/prod build files.
@@ -26,6 +27,7 @@ function rebundle(devBundle) {
     min = rename({ suffix: '.min' });
     min.pipe(sourcemaps.init({loadMaps: true}))
         .pipe(uglify())
+        .pipe(stripDebug())
         .pipe(sourcemaps.write('./', {sourceRoot: './', addComment: false}))
         .pipe(gulp.dest(paths.out));
 
@@ -48,7 +50,7 @@ function rebundle(devBundle) {
 function createBundler(args) {
     args = args || {};
     args.debug = true;
-    args.standalone = 'Moovly';
+    args.standalone = 'D&C';
 
     var bundle = browserify(paths.jsEntry, args),
         argv = require('minimist')(process.argv.slice(2)),

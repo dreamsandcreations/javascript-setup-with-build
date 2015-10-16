@@ -21,9 +21,9 @@
         "default"       : {
             "outputSourceFiles" : true
         },
-        "applicationName": "Moovly Editor",
-        "footer"        : "Made with ♥ by <a href='http://moovly.com'>Moovly</a>",
-        "copyright"     : "Moovly",
+        "applicationName": "Incredible Name",
+        "footer"        : "Made with ♥ by <a href='http://dreamsandcreations.be'>Dreams And Creations</a>",
+        "copyright"     : "Dreams And Creations",
         "disqus": "",
         "googleAnalytics": "",
         "openGraph": {
