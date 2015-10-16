@@ -9,8 +9,8 @@
   ],
   "main": "./src/javascript/index.js",
   "homepage": "https://www.dreamsandcreations.be/",
-  "bugs": "",
-  "license": "",
+  "bugs": "https://github.com/dreamsandcreations/javascript-setup-with-build/issues",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/dreamsandcreations/javascript-setup-with-build.git"
